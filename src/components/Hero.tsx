@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
   return (
@@ -8,8 +9,15 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-primary opacity-10 blur-3xl animate-pulse" />
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        <div className="mb-6 inline-block">
-          <div className="text-primary font-mono text-sm mb-2 animate-fade-in">
+        <div className="mb-8 inline-block">
+          <img 
+            src={profilePhoto} 
+            alt="Prithv Akash R V M"
+            className="w-40 h-40 rounded-full object-cover border-4 border-primary shadow-glow-primary mx-auto animate-fade-in"
+          />
+        </div>
+        <div className="mb-4 inline-block">
+          <div className="text-primary font-mono text-sm animate-fade-in">
             {"<Hello World />"}
           </div>
         </div>
